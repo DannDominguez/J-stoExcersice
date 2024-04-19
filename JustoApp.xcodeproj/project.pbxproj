@@ -11,6 +11,10 @@
 		B19E93392BD09FE500767429 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E93382BD09FE500767429 /* ContentView.swift */; };
 		B19E933B2BD09FE700767429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19E933A2BD09FE700767429 /* Assets.xcassets */; };
 		B19E933E2BD09FE700767429 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19E933D2BD09FE700767429 /* Preview Assets.xcassets */; };
+		B19E93462BD0A5D500767429 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E93452BD0A5D500767429 /* APIClient.swift */; };
+		B19E934A2BD0A60900767429 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E93492BD0A60900767429 /* UsersModel.swift */; };
+		B19E934D2BD0B2E900767429 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E934C2BD0B2E900767429 /* UsersListView.swift */; };
+		B19E934F2BD0B2FE00767429 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E934E2BD0B2FE00767429 /* UsersListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		B19E93382BD09FE500767429 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B19E933A2BD09FE700767429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B19E933D2BD09FE700767429 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B19E93452BD0A5D500767429 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B19E93492BD0A60900767429 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		B19E934C2BD0B2E900767429 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		B19E934E2BD0B2FE00767429 /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,9 @@
 		B19E93352BD09FE500767429 /* JustoApp */ = {
 			isa = PBXGroup;
 			children = (
+				B19E93482BD0A5ED00767429 /* Network */,
+				B19E93472BD0A5DC00767429 /* Model */,
+				B19E93442BD0A58A00767429 /* Modules */,
 				B19E93362BD09FE500767429 /* JustoAppApp.swift */,
 				B19E93382BD09FE500767429 /* ContentView.swift */,
 				B19E933A2BD09FE700767429 /* Assets.xcassets */,
@@ -65,6 +76,31 @@
 				B19E933D2BD09FE700767429 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B19E93442BD0A58A00767429 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B19E934C2BD0B2E900767429 /* UsersListView.swift */,
+				B19E934E2BD0B2FE00767429 /* UsersListViewModel.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B19E93472BD0A5DC00767429 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B19E93492BD0A60900767429 /* UsersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B19E93482BD0A5ED00767429 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B19E93452BD0A5D500767429 /* APIClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19E93392BD09FE500767429 /* ContentView.swift in Sources */,
+				B19E934F2BD0B2FE00767429 /* UsersListViewModel.swift in Sources */,
 				B19E93372BD09FE500767429 /* JustoAppApp.swift in Sources */,
+				B19E934D2BD0B2E900767429 /* UsersListView.swift in Sources */,
+				B19E93462BD0A5D500767429 /* APIClient.swift in Sources */,
+				B19E934A2BD0A60900767429 /* UsersModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
